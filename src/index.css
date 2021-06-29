@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* section {
+    width: 90vw;
+    max-width: 1170px;
+    margin : 0 auto;
+} */
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #F0F3FB;
+}
+
+.container {
+    width: 90vw;
+    max-width: 620px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.title h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.review {
+    background-color: #ffffff;
+    text-align: center;
+    color: black;
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.review:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #5F3AD0;
+    position: absolute;
+    border-radius: 50%;
+    top: -0.01rem;
+    right: -0.8rem;
+}
+
+.person-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.name {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+
+.job {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-size: 0.90rem;
+    color: grey;
+
+}
+
+.text {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-container {
+    margin-top: 1rem;
+}
+
+.next-btn, 
+.prev-btn {
+    margin: 0 1.5rem;
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.random-btn {
+    padding : 0.60rem 2rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #5F3AD0;
+    color: #ffffff;
+    border: none;
+    transition: 0.2s;
+}
+
+.random-btn:hover {
+    letter-spacing: 2px;
+
+}
+
+
+
